@@ -2,6 +2,3 @@
 2016-05-13
 AAAAAAAAAA
 BBBBBBBBBB
-CCCccc
-ddddd
-ddddeeee
