@@ -1,0 +1,78 @@
+*{
+	padding:0;
+	margin:0;
+	font-family: "Times New Roman";
+}
+a{
+	text-decoration: none;
+}
+.mybox{
+	width: 100%;
+	height: 13.34rem;
+	text-align: center;
+	background: url(i/Background1.png) 0 0 no-repeat;
+	background-size:100%  13.34rem;
+}
+.mybox img{
+	width: 3rem;
+	height: 3rem;
+	margin-top: 1.8rem;
+}
+.username{
+	margin-top: 2.34rem;
+	background: url(i/icon1.png) 0.55rem center no-repeat;
+	background-size:0.38rem 0.4rem;
+}
+.password{
+	margin-top: 0.3rem;
+	background: url(i/icon2.png) 0.55rem center no-repeat;
+	background-size:0.4rem 0.44rem;
+}
+.mybox input{
+	display: block;
+	padding-left:1.3rem;
+	width: 100%;
+	box-sizing: border-box;
+	height: 0.9rem;
+	font-size: 0.28rem;
+	color:#fff;
+	outline: none;
+	border-radius: 0;
+	border:none;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+input::-webkit-input-placeholder{
+	color: #fff;
+	font-size: 0.28rem;
+}
+input::-ms-input-placeholder{
+	color: #fff;
+	font-size: 0.28rem;
+}
+input::-moz-placeholder{
+	color: #fff;
+	font-size: 0.28rem;
+}
+.f1{
+	float: right;
+	line-height: 0.76rem;
+	font-size: 0.26rem;
+	color: #bcbbb9;
+	margin-right: 0.7rem;
+}
+.btn{
+	width: 100%;
+	background: #ff3366;
+	height: 1.2rem;
+	border:none;
+	margin-top: 0.94rem;
+	color:#fff;
+	font-size: 0.3rem;
+}
+.p1{
+	font-size: 0.26rem;
+	margin: 0.4rem auto 0;
+}
+.f2{
+	color: #fff;
+}

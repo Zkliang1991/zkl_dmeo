@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>切换颜色</title>
+		<style type="text/css">
+			#color{
+				width: 200px;
+				height: 200px;
+				border:1px solid #ccc;
+				display: block;
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<fieldset>
+			<legend>选择颜色</legend>
+			<input type="range" max="255" min="0" value="0" id="txtR" oninput="changeColor()"/>
+			<input type="range" max="255" min="0" value="0" id="txtG" oninput="changeColor()"/>
+			<input type="range" max="255" min="0" value="0" id="txtB" oninput="changeColor()"/>
+			<span id="color"></span>
+			<strong id="inner">rgb(0,0,0)</strong>
+		</fieldset>
+		
+		
+		<script>
+			
+			function $$id(id){
+				return document.getElementById(id);
+			}
+			
+			function changeColor(){
+				var redValue= $$id("txtR").value;
+				var greenValue = $$id("txtG").value;
+				var blueValue = $$id("txtB").value;
+				console.log(redValue);
+				var colorValue ='rgb('+redValue+','+greenValue+','+blueValue+')';
+				$$id("inner").innerHTML = colorValue;
+				$$id("color").style.backgroundColor = colorValue;
+			}
+			changeColor()
+		</script>
+	</body>
+</html>

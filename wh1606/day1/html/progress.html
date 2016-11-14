@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>progress</title>
+</head>
+<body>
+<!-- progress	是HTML 5中新增的状态交互元素，用来表示页面中的某个任务完成的进度（进程），如下载文件时，文件下载到本地的进度值，可以通过该元素动态展示在页面中，展示的方式既可以使用整数（如1到100），也可以使用百分比（如10%到100%） -->
+	<progress>进度条</progress><br>
+	<progress value="0" max="100" min="0" step="1" id="pro"></progress>
+	<span id="text">等待下载</span>
+	<button id="btn"   onclick="thisInterval()">开始下载</button>
+
+	<script type="text/javascript">
+		var pro = document.getElementById("pro");
+		var btn = document.getElementById("btn");
+		var txt = document.getElementById("text");
+		var num = 0;
+		var timer = null;
+		// var timer = setInterval(function(){
+		// 	num++;
+		// 	if (num=100) {
+		// 		clearInterval(timer);
+		// 	}
+		// },300);
+		// btn.conclick = timer;
+
+		function proTimer(){
+			num++;
+			console.log(num);
+			if(num>=pro.max){
+				clearInterval(timer);
+				txt.innerHTML ="下载完成";
+				num=100;
+			}else{
+				pro.value = num;
+				txt.innerHTML = num+"%";
+			}
+			console.log(num);
+		}
+		function thisInterval(){
+			clearInterval(timer);
+			timer = setInterval(proTimer,50);
+		}
+	</script>
+</body>
+</html>

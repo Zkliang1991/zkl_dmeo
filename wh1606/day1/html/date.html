@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta  name="viewport" content="initial-scale=1,width=device-width,maximum-scale=1,minimum-scale = 1,user-scalable=no"/>
+	<!--<meta name="viewport" content="initial-scale=1,width=device-width,maximum-scale=1,min/imum-scale=1,user-scalable=no">-->
+	<style type="text/css">
+	input{
+		width: 60%;height: 50px;line-height: 50px;padding: 10px;margin: 10px auto;display: block;font-size: 20px;
+	}
+	</style>
+</head>
+<body>
+	<input type="search" name="search" />
+	<input type="tel" name="tel" placeholder="请输入手机号" maxlength="11" />
+	<!-- 手机端 调起数字键盘-->
+<!-- 	<input type="number" placeholder="请输入数字" min="0" max="100" step="5"
+	value="10"></input>
+ -->	
+ 	<input type="number" max='100' min="20" value="44" step='6'></input>
+	<input type="email" placeholder="请输入邮箱"></input>
+	<!-- 手机端 调起邮箱键盘   兼容性比较低 -->
+
+	<input type="url" placeholder="请输入url地址"></input>
+
+	<input type="date"></input>
+    <!-- 日期 设置 年月日  -->
+	<input type="time"></input>
+    <!-- 时间 设置小时和分 -->
+	<input type="month"></input>
+	<!-- 月份拾取器 -->
+	<input type="week"></input>
+	<!-- 手机不兼容 -->
+	<input type="datetime">
+	<!-- 选择时间、日期、月、年  不支持google －－ firefox －－ safari -->
+	<input name="txtDate_6" type="datetime-local">
+	<!-- 选择时间、日期、月、年（本地时间） -->
+
+</body>
+</html>

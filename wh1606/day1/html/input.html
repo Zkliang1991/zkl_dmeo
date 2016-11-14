@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>新增表单元素</title>
+		<style type="text/css">
+			input{
+				display: block;
+				margin: 10px;
+				height: 30px;
+				outline:none;
+			}
+		</style>
+	</head>
+	<body>
+		<form >
+			<!--
+			1.type=eamil 自行判断邮箱是否输入正确(pc)，调起手机邮箱键盘	
+			multiple 表示可以输入多个值  输入多个文件
+			required 表示必须
+			2.type=url 表示输入url
+			3.type=search 表示搜索输入框  在firefix无效
+			4.type=file 表示选择文件  multiple
+			5.type=color 颜色拾取器  在safari浏览器无效
+			6.type=number 表示数字框
+			max 最大值
+			min 最小值
+			step 步长
+			23 26 29 32 35 38 40 41 
+			7.range 表示滚动条
+			8.tel 电话键盘 移动端 
+			9.date 表示日期
+			10.month 表示年月
+			11.week 表示当前年的第几周
+			12.time 表示选取时间
+			13.datetime 不兼容
+			14.datetime-local 选取时间和年月日
+			-->
+			<input type="email"  name="email" multiple="multiple" required/>
+			<input type="url"   name="url" required/>
+			<input type="search" name="search"  placeholder="请输入关键字"/>
+			<input type="file" name="file" />
+			<input type="color" name="color" />
+			<input type="number"  max="100" min="23" step="3" value="40"/>
+			<input type="range" name="range" stpe="5" max="200"  min="0" value="0"/>
+			<input type="tel"  />
+			<input type="date" />
+			<input type="month" />
+			<input type="week" />
+			<input type="time" />
+			<input type="datetime" />
+			<input type="datetime-local" name="" id="" value="" />
+			<input type="submit"  value="提交"/>
+		</form>
+	</body>
+</html>

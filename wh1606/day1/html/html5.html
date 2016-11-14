@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>html5新标签</title>
+	<style>
+	*{
+		padding:0;
+		margin:0;
+	}
+	body{
+		background: deeppink;
+	}
+	header,nav,footer,article,p,section,aside{
+		display: block;
+		margin:10px;
+		background: #ddd;
+		border-radius: 5px;
+		color:#fff;
+		font-size:24px;
+		font-family: "微软雅黑";
+		text-align: center;
+
+	}
+	header,nav,footer,.header1,.footer1{
+		height: 50px;
+		line-height: 50px;
+	}
+	p{
+		background: pink;
+		height:340px;
+		line-height: 340px;
+	}
+	.header1,.footer1{
+		background: blue;
+	}
+	section{
+		height: 500px;
+		background: yellow;
+	}
+	article{
+		width: 60%;
+		height:480px;
+		float:left;
+	}
+	aside{
+		width: 30%;
+		height: 480px;
+		float: right;
+		background: yellowgreen;
+		line-height: 480px;
+	}
+	</style>
+</head>
+<body>
+	
+	<header>header</header>
+	<nav>nav</nav>
+	<section>
+		<article>
+			<header class="header1">header1</header>
+			<p>content</p>
+			<footer class="footer1">footer1</footer>
+		</article>
+		<aside>aside</aside>
+	</section>
+	<footer>footer</footer>
+</body>
+</html>

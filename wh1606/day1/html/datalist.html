@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>datalist</title>
+</head>
+<body>
+	<!-- 
+	input 的list 和datalist的id必须绑定一起
+	input内输入时就会有自动完成（autocomplete）的功能，用户将会看见一个下拉列表供其选择。
+	label  属性规定更短版本的选项
+	 -->
+	<input type="text" list="mysearch">
+	<datalist id="mysearch">
+		<option value="webkit" label="-webkit"></option>
+		<option value="firefix" label="-moz"></option>
+		<option value="safari" label="-webkit"></option>
+		<option value="opera" label="-o"></option>
+		<option value="sogou" label="-ms"></option>
+		<option value="chrome" label="-webkit"></option>
+	</datalist>
+</body>
+</html>
